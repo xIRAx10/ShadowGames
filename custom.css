@@ -1,0 +1,71 @@
+/* el borde para los divs y asi ir viendo que la pagina se esta haciendo bien */
+
+ header img{
+   height: 125px;
+   width: 175px;
+  
+ }
+header {
+   background-color: rgba(40,43,40) !important;
+}
+ a{
+   color: white;
+   display: inline; 
+   margin: 0px;
+  
+ }
+
+article img {
+    height: 200px;
+}
+
+.div {
+    height: 100vh; 
+    overflow: hidden;
+}
+
+.img {
+    width: 100%; height: 100%; object-fit: cover;
+}
+
+
+hr{
+    margin-left: 25%;
+}
+
+/* esto para el color de la flecha del carousel*/
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+      
+      filter: invert(50%); /*cambio el color de la flecha con esta clase, que invierte los colores. En este caso 0% seria blanco y 100% negro*/
+}
+
+/* esto de aqui es simplemente para hacer lo de las estrellas de valoracion */
+
+.rating {
+  display: flex;
+  flex-direction: row-reverse; /* Cambia la dirección de izquierda a derecha */
+ float: left;
+}
+
+
+.rating input[type="radio"] {
+  display: none;
+}
+
+.rating label {
+  display: inline-block;
+  font-size: 24px;
+  cursor: pointer;
+  color: white; /* Color de estrellas en estado normal */
+}
+
+.rating input[type="radio"]:checked ~ label,
+.rating label:hover ~ label {
+  color: #f0ad4e; /* Color de estrellas al hacer hover y seleccionar */
+}
+      
+
+
+      
+
